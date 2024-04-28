@@ -14,7 +14,9 @@ export class RightLoginComponent implements OnInit {
   }
 
   loadInputBorder(){
-    $('btarget').addClass("input-border");
-    alert("reached");
+    $('#text').removeAttr('hidden');
+    $('#btarget').addClass('input-border');
+    $('#input').removeAttr('placeholder');
+   
   }
 }
