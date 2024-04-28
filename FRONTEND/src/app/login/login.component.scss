@@ -1,3 +1,97 @@
-.login-form{
+// .login-form{
+//     // background-color: white;
+//     width: 65%;
+//     height: 100%;
+//     margin: auto;
+//     margin-top: 200px;
+//     display: flex;
+   
+// }
+
+
+// .header{
+//     width: 50%;
+//     background-color: rgb(255, 255, 255);
+//     border-top-left-radius: 20px;
+//     border-bottom-left-radius:20px ;
+// }
+// .form{
+//     justify-content: right;
+//     background-color: blue;
+//     width: 50%;
+//     height: 402px;
+//     border-top-right-radius: 20px;
+//     border-bottom-right-radius:20px ;
+// }
+
+// @media (max-width: 768px) {
+//     .login-form {
+//         display: block;
+//         width: 100%; 
+//     }
+// }
+
+.login-form {
+    width: 65%;
+    height: 402px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Center items horizontally */
+}
+
+.header, .form {
+    width: 100%; 
+    margin-bottom: 20px; 
+    height: 402px;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 20px; 
+    border-top-left-radius: 20px; 
+}
+
+.form {
+    background-color: blue;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px; 
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 80%; 
+    }
+}
+.sec{
+    width: 100%;
+    display: flex;
+}
+
+
+.text{
+    font-family: "Google Sans", roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 36px;
+    display: block;
+    margin-top: -70px;
+    margin-left: 30px;
     background-color: white;
+}
+.text span{
+    background-color: white;
+}
+
+.logo{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 36px;
+    padding-right: 36px;
+//    background-color: red;
+   justify-content: left;
+   display: flex;
+}
+.logo svg{
+    background-color: rgb(255, 255, 255);
+    scale: 140%;
 }
