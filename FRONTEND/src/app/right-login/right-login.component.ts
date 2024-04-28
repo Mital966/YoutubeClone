@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-right-login',
@@ -12,4 +13,8 @@ export class RightLoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loadInputBorder(){
+    $('btarget').addClass("input-border");
+    alert("reached");
+  }
 }
