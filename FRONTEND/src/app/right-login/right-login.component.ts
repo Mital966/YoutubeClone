@@ -11,6 +11,8 @@ export class RightLoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $("#sign").html("Sign in");
+    $("#loginMsg").html("to continue to YouTube");
   }
 
   loadInputBorder(){
@@ -19,4 +21,6 @@ export class RightLoginComponent implements OnInit {
     $('#input').removeAttr('placeholder');
    
   }
+
+ 
 }
