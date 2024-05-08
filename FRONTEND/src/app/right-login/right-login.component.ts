@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PatternValidator } from '@angular/forms';
 import * as $ from 'jquery';
 
 @Component({
@@ -7,6 +8,8 @@ import * as $ from 'jquery';
   styleUrls: ['./right-login.component.scss']
 })
 export class RightLoginComponent implements OnInit {
+
+  pattern: PatternValidator = new PatternValidator;
 
   constructor() { }
 
@@ -20,6 +23,11 @@ export class RightLoginComponent implements OnInit {
     $('#btarget').addClass('input-border');
     $('#input').removeAttr('placeholder');
    
+  }
+
+  validateEmail(){
+    let val = $("#input").val();
+    this.pattern.pattern="";
   }
 
  
