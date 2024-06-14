@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-password',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PasswordComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
     $("#sign").html("Enter your Password");
@@ -20,5 +22,10 @@ export class PasswordComponent implements OnInit {
     $('#input').removeAttr('placeholder');
   
   }
+
+  checkLoginDetails() {
+    this.route.navigateByUrl("/homePage");
+    
+    }
 
 }

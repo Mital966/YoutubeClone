@@ -1,0 +1,31 @@
+<div class="base">
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>YouTube</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="header">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
+        </header>
+        <section class="videos">
+            <ng-container *ngFor="let x of times;let sl = index">
+                <div class="video-card">
+                    <img src="../../assets/img/1.jfif" alt="Video Thumbnail">
+                    <h3>One Piece Episode{{sl+1}}</h3>
+                    <p>Channel Name • 1M views • 1 day ago</p>
+                </div>
+            </ng-container>
+            <!-- Repeat .video-card as needed -->
+        </section>
+    </main>
+</div>

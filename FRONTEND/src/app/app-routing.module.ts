@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RightLoginComponent } from './right-login/right-login.component';
 import { ForgotEmailComponent } from './forgot-email/forgot-email.component';
 import { PasswordComponent } from './password/password.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,10 @@ const routes: Routes = [
     children: [{ path: 'login', component: RightLoginComponent },
     {path:'forgot-email',component:ForgotEmailComponent},
     {path:'password',component:PasswordComponent}],
-  },
+  },{
+    path:'homePage',
+    component:HomePageComponent
+  }
   
 ];
 

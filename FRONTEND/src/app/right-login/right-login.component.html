@@ -3,7 +3,7 @@
    
     <div id="btarget" class="col-md-12 ">
         <span class="text-place" hidden id="text">Email or phone</span>
-        <input type="text" name="email" class="form-control" (click)="loadInputBorder()" placeholder="Email or phone" id="input">
+        <input type="text" name="email" class="form-control" (click)="loadInputBorder()" (input)="validateEmail()" placeholder="Email or phone" id="input">
 
     </div>
 
@@ -18,7 +18,11 @@
 
     <div class="mt-5 sec2">
             <a  href="" class="bt" style="text-decoration: none; font-size: 18px;height: 40px;"> Create account</a>
-            <a class="btn" >Next</a>
+            <a class="btn" routerLink="/password">Next</a>
     </div>
    </div>
+</div>
+
+<div>
+
 </div>
